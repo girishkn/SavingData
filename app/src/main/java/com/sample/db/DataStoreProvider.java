@@ -15,7 +15,7 @@ public class DataStoreProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
-        mDataStore = new DataStore(getContext(), null, null, 0);
+        mDataStore = new DataStore(getContext());
         return false;
     }
 

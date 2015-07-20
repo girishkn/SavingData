@@ -51,7 +51,7 @@ public class SampleDBActivity extends Activity {
 
     private void createDB() {
         if (mDataStore == null) {
-            mDataStore = new DataStore(this, null, null, 0);
+            mDataStore = new DataStore(this);
         }
     }
 

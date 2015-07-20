@@ -23,8 +23,8 @@ public class DataStore extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
     public static final String CONTACTS_TABLE_NAME = "contacts_tbl";
 
-    public DataStore(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, DB_NAME, factory, DB_VERSION);
+    public DataStore(Context context) {
+        super(context, DB_NAME, null, DB_VERSION);
     }
 
     @Override
